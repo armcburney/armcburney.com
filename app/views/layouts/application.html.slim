@@ -1,0 +1,20 @@
+doctype html
+
+html
+  head
+    title Andrew Robert McBurney
+
+    // Metas
+    meta charset="utf-8"
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta name="viewport" content="initial-scale=1.0"
+    meta name="author" content="Andrew McBurney"
+    meta name="keywords" content="Andrew McBurney, Software Engineering"
+    meta name="description" content="The personal website of Andrew McBurney."
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    = yield
