@@ -1,16 +1,5 @@
 class HomeController < ApplicationController
-  def index
-  end
+  def index() end
 
-  def music
-  end
-
-  def projects
-  end
-
-  def engsoc
-  end
-
-  def contact
-  end
+  def cv() end
 end

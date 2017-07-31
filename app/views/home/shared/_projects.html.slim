@@ -1,6 +1,26 @@
-.padded
-  - items.each do |item|
-    .col-1-4
-      = link_to 'https://github.com/AndrewMcBurney' do
-        = image_tag 'projects/image'
-
+.feed-cards
+  .autogrid
+    .col
+      .feed-card
+        = link_to "https://github.com/emerald-lang/emerald"
+          = image_tag("projects/emerald.png", size: "250")
+          h4 Emerald
+          p
+            | A whitespace-delimited, backend language-agnostic HTML5 templating
+            |  engine
+    .col
+      .feed-card
+        = link_to "https://github.com/AndrewMcBurney/petermcburney.com"
+          = image_tag("projects/petermcburney.png", size: "250")
+          h4 petermcburney.com
+          p
+            | My father's art business, and photography website - made with Ruby
+            |  on Rails
+    .col
+      .feed-card
+        = link_to "https://github.com/emerald-lang/emerald-emacs"
+          = image_tag("projects/syntax.png", size: "250")
+          h4 Emerald Emacs
+          p
+            | Emacs package for emerald language major mode - including syntax
+            |  highlighting and custom bindings
