@@ -7,25 +7,20 @@ body
   font-weight: 300
   -webkit-font-smoothing: auto
 
+  h1
+    font-size: 24px
+
+  h2
+    font-size: 18px
+
   a
     text-decoration: none
 
-  .bg-white, .bordered-list .here
-    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.05)
-
-  .section
-    overflow: auto
-    max-width: 1024px
-
   .main
-    .row:nth-child(odd)
+    .row:nth-child(odd):not(.hero)
       background: #fafafa
 
-h1
-  font-size: 24px
-
-h2
-  font-size: 18px
+/* Vital Styles */
 
 .box
   overflow: auto
@@ -37,6 +32,15 @@ h2
 .feed-card
   a
     color: inherit
+
+.bg-white, .bordered-list .here
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.05)
+
+.section
+  overflow: auto
+  max-width: 1024px
+
+/* Media Queries */
 
 @media screen and (max-width: 860px)
   .header .section, .section

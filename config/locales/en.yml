@@ -1,16 +1,33 @@
 en:
+  general:
+    about: Third year Software Engineering student at the University of Waterloo. Passionate about Big Data, Concurrent and Distributed Systems, Machine Learning. Also interested in the societal and cultural implications that artificial intelligence will impose in the future.
+    cv: CV description
+    email: andrewrobertmcburney@gmail.com
+
   meta:
     author: Andrew Robert McBurney
+    description: The personal website of Andrew Robert McBurney.
     keywords: Andrew McBurney, Andrew Robert McBurney, Software Engineering, Waterloo
-    description: The personal website of Andrew McBurney. Full Stack Developer | Aspiring Engineer | Student Leader | Musician
     viewport: width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no
 
   urls:
+    base: http://www.andrewrobertmcburney.com
+
     links:
       github: https://github.com/AndrewMcBurney
-      twitter: https://twitter.com/armcburney
-      soundcloud: https://soundcloud.com/andrew-mcburney-3
       linkedin: https://www.linkedin.com/in/andrew-mcburney-7b0529109/
+      soundcloud: https://soundcloud.com/andrew-mcburney-3
+      twitter: https://twitter.com/armcburney
+
+    images:
+      avatar: https://pbs.twimg.com/profile_images/860328374459170816/-dBraJtW_400x400.jpg
+
+    internal:
+      about: /#about
+      contact: /#contact
+      cv: /cv
+      projects: /#projects
+      music: /#music
 
     soundcloud:
       home: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191205088&color=333333&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false

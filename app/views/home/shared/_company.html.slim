@@ -1,0 +1,16 @@
+.row
+  .section
+    h1 = name
+    hr
+
+    h3 Tools Used
+    p = @tools
+
+    h3 Projects
+    - @projects.each do |project|
+      h4 = project.title
+
+      - project.points.each do |point|
+        p = point.text
+        br
+        i = "(#{point.tools})"
