@@ -1,0 +1,14 @@
+doctype html
+
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+
+  body
+    .header
+      h1 Contact Form Email
+      b #{@name}, (#{@email})
+
+    .message
+      br
+      p = @body

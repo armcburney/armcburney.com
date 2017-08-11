@@ -11,6 +11,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
+    = render 'home/shared/notice'
     = render 'home/shared/nav'
     = yield
     = render 'home/shared/footer'
