@@ -13,7 +13,7 @@ Metrics/BlockLength:
     - ./**/*_spec.rb
 
 Metrics/LineLength:
-  Max: 80
+  Max: 120
 
 Rails:
   Enabled: true
