@@ -1,4 +1,4 @@
-- if @email.errors.any?
+- if @email.present? && @email.errors.any?
   .row.notice
     .section.center
       .notice-message
