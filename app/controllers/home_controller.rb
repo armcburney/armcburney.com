@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class HomeController < ApplicationController
   def index
     @email = Email.new
@@ -9,7 +11,7 @@ class HomeController < ApplicationController
     @email = Email.new(email_params)
 
     if @email.save
-      redirect_to root_url, notice: t('general.email-success')
+      redirect_to root_url, notice: t("messages.email-success")
     else
       render :index
     end

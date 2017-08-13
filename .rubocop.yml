@@ -1,3 +1,6 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
 Documentation:
   Enabled: false
 
@@ -23,8 +26,10 @@ Style/PercentLiteralDelimiters:
     '%i': ()
     '%w': ()
 
-Style/RedundantFreeze:
-  Enabled: true
-
 Style/MutableConstant:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+  Enabled: true

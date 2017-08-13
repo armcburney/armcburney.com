@@ -4,14 +4,14 @@ html
   head
     title Andrew Robert McBurney
 
-    = render 'layouts/metas'
+    = render "layouts/metas"
     = csrf_meta_tags
 
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_include_tag "application", "data-turbolinks-track": "reload"
 
   body
-    = render 'home/shared/notice'
-    = render 'home/shared/nav'
+    = render "home/shared/notice"
+    = render "home/shared/nav"
     = yield
-    = render 'home/shared/footer'
+    = render "home/shared/footer"
