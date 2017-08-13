@@ -1,12 +1,12 @@
 #about.row
   .section
-    h1.center = title
+    h1.center About Me
     hr.small
 
     .col-1-4
       ul.bordered-list
-        li = link_to "About", t("urls.internal.about"), class: about
-        li = link_to "Curriculum Vitae", t("urls.internal.cv"), class: cv
+        li = link_to "About", t("urls.internal.about"), class: "here"
+        li = link_to "Curriculum Vitae", t("urls.internal.cv")
         li = link_to "R&eacute;sum&eacute;".html_safe, asset_path("resume.pdf"), target: "_blank"
 
     .col-3-4.bg-white.padding.no-first-last
@@ -26,4 +26,4 @@
       p
         small.gray-light Description
         br
-        | #{description}
+        | #{I18n.t("general.about")}

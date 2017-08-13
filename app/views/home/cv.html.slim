@@ -1,7 +1,6 @@
-.main
-  = render "home/shared/banner"
-  = render "home/shared/about", title: "Curriculum Vitae", description: I18n.t("general.cv"), about: "", cv: "here"
+= render "home/shared/notice", notice: "This is currently a work in progress."
 
+.main
   / Work Experience
   = render "home/shared/heading", label: "Work Experience"
   = render "home/cv/doximity"

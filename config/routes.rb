@@ -1,6 +1,8 @@
-Rails.application.routes.draw do
-  get  'cv', to: 'home#cv'
-  post '',   to: 'home#mail'
+# frozen_string_literal: true
 
-  root 'home#index'
+Rails.application.routes.draw do
+  get  "cv", to: "home#cv"
+  post "",   to: "home#mail"
+
+  root "home#index"
 end

@@ -1,14 +1,16 @@
-require 'spec_helper'
+# frozen_string_literal: true
 
-ENV['RAILS_ENV'] ||= 'test'
+require "spec_helper"
 
-require File.expand_path('../../config/environment', __FILE__)
+ENV["RAILS_ENV"] ||= "test"
+
+require File.expand_path("../../config/environment", __FILE__)
 
 if Rails.env.production?
-  abort('The Rails environment is running in production mode!')
+  abort("The Rails environment is running in production mode!")
 end
 
-require 'rspec/rails'
+require "rspec/rails"
 
 ActiveRecord::Migration.maintain_test_schema!
 

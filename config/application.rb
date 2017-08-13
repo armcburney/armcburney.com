@@ -1,6 +1,8 @@
-require_relative 'boot'
+# frozen_string_literal: true
 
-require 'rails/all'
+require_relative "boot"
+
+require "rails/all"
 
 Bundler.require(*Rails.groups)
 
@@ -10,7 +12,7 @@ module AndrewMcBurney
     config.sass.preferred_syntax = :sass
 
     config.assets.enabled = true
-    config.assets.paths << Rails.root.join('app', 'assets', 'pdfs')
+    config.assets.paths << Rails.root.join("app", "assets", "pdfs")
 
     config.generators do |g|
       g.template_engine :slim
