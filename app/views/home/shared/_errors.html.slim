@@ -1,8 +1,9 @@
 - if @email.present? && @email.errors.any?
-  .row.notice
+  #errors.row.notice
     .section.center
       .notice-message
         .notice-text
           h2 Email not sent.
           p = @email.errors.full_messages.join(", ")
-        .notice-dismiss = image_tag("icons/icon-close.svg")
+        .notice-dismiss
+          = image_tag "icons/icon-close.svg", onclick: "document.getElementById('errors').className = 'hide'; return false;"

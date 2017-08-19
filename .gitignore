@@ -6,6 +6,7 @@
 /node_modules
 /yarn-error.log
 .byebug_history
+/public/assets
 /public/packs
 /node_modules
 .DS_Store
