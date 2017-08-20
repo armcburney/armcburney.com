@@ -11,15 +11,17 @@ footer
         .col-1-3.middle
             h3 Navigation
             ul
+              small = link_to "About",    t("urls.internal.about")
               small = link_to "Projects", t("urls.internal.projects")
               small = link_to "Music",    t("urls.internal.music")
               small = link_to "Contact",  t("urls.internal.contact")
 
             h3 Media
             ul
-              small = link_to "GitHub",   t("urls.links.github")
-              small = link_to "LinkedIn", t("urls.links.linkedin")
-              small = link_to "Twitter",  t("urls.links.twitter")
+              small = link_to "GitHub",     t("urls.links.github")
+              small = link_to "Twitter",    t("urls.links.twitter")
+              small = link_to "Soundcloud", t("urls.links.soundcloud")
+              small = link_to "LinkedIn",   t("urls.links.linkedin")
 
         .col-1-3.right
           h3 Contact

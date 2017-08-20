@@ -1,3 +1,5 @@
+@import ../../variables.sass
+
 footer
   color: #eee
 
@@ -24,11 +26,12 @@ footer
 
   .row.bottom
     background: #2c2b2b
-    .center
+    .section
       display: inherit
+      padding-bottom: 1em
 
 
-@media screen and (max-width: 860px)
+@media screen and (max-width: $tablet-viewport)
   footer
     .row
       .section

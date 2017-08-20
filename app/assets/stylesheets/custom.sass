@@ -1,5 +1,6 @@
 @import vital/sprockets
 @import vital/all
+@import variables.sass
 
 .hide
   display: none
@@ -42,9 +43,10 @@ body
 .section
   overflow: auto
   max-width: 1024px
+  padding-bottom: 3em
 
 /* Media Queries */
 
-@media screen and (max-width: 860px)
+@media screen and (max-width: $tablet-viewport)
   .header .section, .section
     width: 90%
