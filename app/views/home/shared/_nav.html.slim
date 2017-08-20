@@ -1,8 +1,6 @@
 .row.header
   .section
     nav
-      = link_to "Andrew McBurney", root_url, class: "logo"
-
       label#menu-toggle-label for="menu-toggle"
       input#menu-toggle type="checkbox"
       .icon-menu
@@ -13,3 +11,4 @@
         li = link_to "Contact",  t("urls.internal.contact")
         li = link_to "Music",    t("urls.internal.music")
         li = link_to "Projects", t("urls.internal.projects")
+        li = link_to "About",    t("urls.internal.about")
