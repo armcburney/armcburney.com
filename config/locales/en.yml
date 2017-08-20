@@ -11,7 +11,7 @@ en:
     viewport: width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no
 
   urls:
-    base: http://www.andrewrobertmcburney.com
+    base: https://www.andrewrobertmcburney.com
 
     links:
       github: https://github.com/AndrewMcBurney
