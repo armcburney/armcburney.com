@@ -1,0 +1,32 @@
+.row.hero.bg-main
+  background: image-url('header.jpg') !important
+  background-position: 0% 100% !important
+  background-size: cover !important
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
+  filter: grayscale(100%)
+
+  .tint
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3))
+
+  hr
+    width: 90%
+  h1
+    font-size: 50px
+    word-spacing: 2px
+  h1, h3
+    font-weight: 300
+
+
+@media screen and (max-width: 860px)
+  .row.hero.bg-main
+    h1
+      font-size: 40px
+    h3
+      font-size: 1.4em
+
+
+@media screen and (max-width: 550px)
+  .row.hero.bg-main
+    .tint
+    .section
+      display: none
