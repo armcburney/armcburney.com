@@ -1,5 +1,28 @@
 @import ../../variables.sass
 
+.row.header
+  border-bottom: 2px solid $tertiary-color
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15)
+  height: $nav-height
+
+  nav
+    height: $nav-height
+
+  a
+    font-size: 0.9em
+    padding: 1.2em 1.2em
+
+  .logo
+    min-height: $nav-height
+
 .menu a
-  color: #666666
-  font-weight: 300 !important
+  color: #999
+  font-weight: 400 !important
+
+
+@media screen and (max-width: $tablet-viewport)
+  .row.header
+    border-bottom: none
+    box-shadow: none
+  .icon-menu
+    height: $nav-height
