@@ -1,20 +1,20 @@
-#music.row
-  .section
-    h1.center Featured Music
+= scroll_reveal animation: "enter top" do
+  #music.row
+    .section
+      h1.center Featured Music
+      .col-1-8.space
+      .col-3-4
+        hr
+        p
+          | Recording music is one of my favourite hobbies. I try to do it when I
+            can (when I'm not busy with school, work, or other commitments) Here's
+            an instrumental cover of one of my favourite bands: <i>The Smashing
+            Pumpkins</i> (The solo starts at 3:00)
+        hr
 
-    .col-1-8.space
-    .col-3-4
-      hr
-      p
-        | Recording music is one of my favourite hobbies. I try to do it when I
-          can (when I'm not busy with school, work, or other commitments) Here's
-          an instrumental cover of one of my favourite bands: <i>The Smashing
-          Pumpkins</i> (The solo starts at 3:00)
-      hr
-
-      iframe width = "100%" height = "166" scrolling = "no" frameborder = "no" src = t("urls.soundcloud.home")
-      blockquote
-        | If you liked the recording, I have a few other covers and,
-          improvisations you can check out
-        = link_to " on my soundcloud", I18n.t("urls.links.soundcloud")
-    .col-1-8.space
+        iframe width = "100%" height = "166" scrolling = "no" frameborder = "no" src = t("urls.soundcloud.home")
+        blockquote
+          | If you liked the recording, I have a few other covers and,
+            improvisations you can check out
+          = link_to " on my soundcloud", I18n.t("urls.links.soundcloud")
+      .col-1-8.space

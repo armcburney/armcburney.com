@@ -1,17 +1,18 @@
-#projects.row
-  .section
-    h1.center Featured Projects
+= scroll_reveal animation: "enter top" do
+  #projects.row
+    .section
+      h1.center Featured Projects
 
-    .col-1-8.space
-    .col-3-4
-      hr
-      p
-        | In my spare time I like to work on open source projects. I have some
-          of my personal projects and open source contributions below. If you're
-          interested in checking out more of my open source work, you can find
-          it
-        = link_to " here", I18n.t("urls.links.github")
-      hr
-    .col-1-8.space
+      .col-1-8.space
+      .col-3-4
+        hr
+        p
+          | In my spare time I like to work on open source projects. I have some
+            of my personal projects and open source contributions below. If you're
+            interested in checking out more of my open source work, you can find
+            it
+          = link_to " here", I18n.t("urls.links.github")
+        hr
+      .col-1-8.space
 
-    = render "home/shared/projects"
+      = render "home/shared/projects"

@@ -1,12 +1,13 @@
 img.avatar src = t("urls.images.avatar") width = "200px" alt = "Andrew Robert McBurney"
 
-#about.row
-  .section
-    h1.center About Me
+= scroll_reveal animation: "enter top" do
+  #about.row
+    .section
+      h1.center About Me
 
-    .col-1-8.space
-    .col-3-4
-      hr
-      p = I18n.t("general.about")
-      hr
-    .col-1-8.space
+      .col-1-8.space
+      .col-3-4
+        hr
+        p = I18n.t("general.about")
+        hr
+      .col-1-8.space

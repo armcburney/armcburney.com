@@ -9,12 +9,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "animate-rails"
 gem "dotenv-rails", groups: %i(development test)
+gem "jquery-rails"
 gem "pg"
 gem "puma", "~> 3.7"
 gem "rails", "~> 5.1.1"
 gem "sass-rails", "~> 5.0"
+gem "scrollreveal-rails"
 gem "slim-rails"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
