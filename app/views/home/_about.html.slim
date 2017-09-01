@@ -10,7 +10,7 @@
         li = link_to "R&eacute;sum&eacute;".html_safe, asset_path("resume.pdf"), target: "_blank"
 
     .col-3-4.bg-white.padding.no-first-last
-      h2
+      h2.fw-400
         | Andrew Robert McBurney
         img.avatar src = t("urls.images.avatar") class = "float-right" width = "20%" alt = "Andrew Robert McBurney"
       ul
@@ -22,7 +22,8 @@
         li
           small.gray-light Handle
           br
-          span @armcburney
+          = link_to t("urls.links.twitter") do
+            span @armcburney
       p
         small.gray-light Description
         br
