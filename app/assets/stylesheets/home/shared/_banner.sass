@@ -1,31 +1,36 @@
 @import ../../variables.sass
 
+.row.hero.bg-main, .tint
+  max-height: 388px
+  min-height: 388px
+
 .row.hero.bg-main
   background: image-url('other/header.jpg') !important
   background-position: 0% 100% !important
   background-size: cover !important
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
+  filter: grayscale(100%)
+
+  .text
+    position: relative
+    top: -30px
+
+  h2
+    font-size: 2.5em
+    word-spacing: 0.25em
+
+  h3
+    font-size: 1.2em
+    word-spacing: 0.1em
+
+  .tint
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3))
 
   .section
-    padding: 10em  0em
-
-  h1
-    font-size: 3.25em
-    word-spacing: 0.25em
-  h1, h3
-    font-weight: 300
-
-
-@media screen and (max-width: $tablet-viewport)
-  .row.hero.bg-main
-    h1
-      font-size: 2.25em
-    h3
-      font-size: 1.4em
+    padding: 7.5em  0em
+    max-width: 34em
 
 
 @media screen and (max-width: $mobile-viewport)
-  .row.hero.bg-main
-    .tint
-    .section
-      display: none
+  .text
+    display: none
