@@ -8,18 +8,27 @@
 
       .icon-menu
       ul.menu
-        li = link_to t("urls.internal.contact")
-          = image_tag "nav/message.png"
-          | Contact
-        li = link_to t("urls.internal.music")
-          = image_tag "nav/speakers.png"
-          | Music
-        li = link_to t("urls.internal.projects")
-          = image_tag "nav/monitor.png"
-          | Projects
-        li = link_to t("urls.internal.about")
-          = image_tag "nav/user.png"
-          | About
-        li = link_to t("urls.internal.home") do
-          = image_tag "nav/home.png"
-          | Home
+        .float-right
+          li = link_to t("urls.internal.contact")
+            = image_tag "nav/message.png"
+            small Contact
+          li = link_to t("urls.internal.music")
+            = image_tag "nav/speakers.png"
+            small Music
+          li = link_to t("urls.internal.projects")
+            = image_tag "nav/monitor.png"
+            small Projects
+          li = link_to t("urls.internal.about")
+            = image_tag "nav/user.png"
+            small About
+
+        .float-left
+          li = link_to asset_path("resume.pdf"), target: "_blank" do
+            = image_tag "nav/file.png"
+            small R&eacute;sum&eacute;
+          li = link_to t("urls.internal.cv") do
+            = image_tag "nav/edit.png"
+            small CV
+          li = link_to t("urls.internal.home") do
+            = image_tag "nav/home.png"
+            small Home

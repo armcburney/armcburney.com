@@ -1,30 +1,14 @@
+img.avatar src = t("urls.images.avatar") width = "15%" alt = "Andrew Robert McBurney"
+
 #about.row
   .section
-    h1.center About Me
+    h1.center Andrew Robert McBurney
     hr.small
+    p.center "I've journeyed here and there and back again"
 
-    .col-1-4
-      ul.bordered-list
-        li = link_to "About", t("urls.internal.about"), class: "here"
-        li = link_to "Curriculum Vitae", t("urls.internal.cv")
-        li = link_to "R&eacute;sum&eacute;".html_safe, asset_path("resume.pdf"), target: "_blank"
-
-    .col-3-4.bg-white.padding.no-first-last
-      h2.fw-400
-        | Andrew Robert McBurney
-        img.avatar src = t("urls.images.avatar") class = "float-right" width = "20%" alt = "Andrew Robert McBurney"
-      ul
-        li
-          small.gray-light Email
-          br
-          span = t("general.email")
-      ul
-        li
-          small.gray-light Handle
-          br
-          = link_to t("urls.links.twitter") do
-            span @armcburney
-      p
-        small.gray-light Description
-        br
-        | #{I18n.t("general.about")}
+    .col-1-8.space
+    .col-3-4
+      hr
+      p = I18n.t("general.about")
+      hr
+    .col-1-8.space
