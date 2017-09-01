@@ -8,8 +8,18 @@
 
       .icon-menu
       ul.menu
-        li = link_to "Contact",  t("urls.internal.contact")
-        li = link_to "Music",    t("urls.internal.music")
-        li = link_to "Projects", t("urls.internal.projects")
-        li = link_to "About",    t("urls.internal.about")
-        li = link_to "Home",     t("urls.internal.home")
+        li = link_to t("urls.internal.contact")
+          = image_tag "nav/message.png"
+          | Contact
+        li = link_to t("urls.internal.music")
+          = image_tag "nav/speakers.png"
+          | Music
+        li = link_to t("urls.internal.projects")
+          = image_tag "nav/monitor.png"
+          | Projects
+        li = link_to t("urls.internal.about")
+          = image_tag "nav/user.png"
+          | About
+        li = link_to t("urls.internal.home") do
+          = image_tag "nav/home.png"
+          | Home
