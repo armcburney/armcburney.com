@@ -7,16 +7,16 @@
       .icon-menu
       ul.menu
         .float-right
-          li = link_to t("urls.internal.contact")
+          li = link_to t("urls.internal.contact") do
             = image_tag "nav/message.png"
             small Contact
-          li = link_to t("urls.internal.music")
+          li = link_to t("urls.internal.music") do
             = image_tag "nav/speakers.png"
             small Music
-          li = link_to t("urls.internal.projects")
+          li = link_to t("urls.internal.projects") do
             = image_tag "nav/monitor.png"
             small Projects
-          li = link_to t("urls.internal.about")
+          li = link_to t("urls.internal.about") do
             = image_tag "nav/user.png"
             small About
 
