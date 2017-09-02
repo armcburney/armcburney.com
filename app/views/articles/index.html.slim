@@ -1,0 +1,22 @@
+.row
+  .section
+    h1 My Blog
+    p Coming soon...
+
+    table
+      thead
+        tr
+          th
+          th
+          th
+
+      tbody
+        - @articles.each do |article|
+          - if logged_in?
+            tr
+              td = link_to "Show", article
+              td = link_to "Edit", edit_article_path(article)
+              td = link_to "Destroy", article, data: { confirm: "Are you sure?" }, method: :delete
+
+    - if logged_in?
+      = link_to "New Article", new_article_path

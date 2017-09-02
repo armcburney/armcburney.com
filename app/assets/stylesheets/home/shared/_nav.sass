@@ -1,7 +1,12 @@
 @import ../../variables.sass
 
+#menu-toggle-label
+  z-index: 2
+.icon-menu
+  z-index: 1
+
 .row.header
-  border-bottom: 2px solid $tertiary-color
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25)
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15)
   height: $nav-height
 
@@ -14,16 +19,23 @@
   nav
     height: $nav-height
 
-  a
+  .menu a
+    color: #444
     font-size: 0.9em
     padding: 1.2em 0.8em
 
-  .logo
-    min-height: $nav-height
-
-.menu a
-  color: #444
-
+  .float-center
+    width: -moz-fit-content
+    width: -webkit-fit-content
+    width: fit-content
+    margin: auto
+    li a
+      padding: 0.8em 0em
+      img
+        border-radius: 100%
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25)
+        height: 2.6em
+        margin: 0px
 
 @media screen and (max-width: $tablet-viewport)
   .row.header

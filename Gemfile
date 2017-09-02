@@ -10,6 +10,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "dotenv-rails", groups: %i(development test)
+gem "friendly_id", "~> 5.1.0"
 gem "jquery-rails"
 gem "pg"
 gem "puma", "~> 3.7"

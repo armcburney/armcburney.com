@@ -1,8 +1,6 @@
 .row.header
   .section
     nav
-      .logo
-
       label#menu-toggle-label for="menu-toggle"
       input#menu-toggle type="checkbox"
 
@@ -22,6 +20,10 @@
             = image_tag "nav/user.png"
             small About
 
+        .float-center
+          li = link_to t("urls.internal.home") do
+            = image_tag "other/logo.png", class: "brand-logo"
+
         .float-left
           li = link_to asset_path("resume.pdf"), target: "_blank" do
             = image_tag "nav/file.png"
@@ -29,6 +31,9 @@
           li = link_to t("urls.internal.cv") do
             = image_tag "nav/edit.png"
             small CV
+          li = link_to t("urls.internal.blog") do
+            = image_tag "nav/planet-earth.png"
+            small Blog
           li = link_to t("urls.internal.home") do
             = image_tag "nav/home.png"
             small Home
