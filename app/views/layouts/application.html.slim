@@ -10,7 +10,17 @@ html
 
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
-    = favicon_link_tag "favicon.ico"
+    = javascript_pack_tag    "highlight/highlight"
+    = favicon_link_tag       "favicon.ico"
+
+    script type = "text/x-mathjax-config"
+      | MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+          }
+        });
+    = mathjax_tag
 
     - if Rails.env.production?
       javascript:

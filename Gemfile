@@ -12,9 +12,11 @@ end
 gem "dotenv-rails", groups: %i(development test)
 gem "friendly_id", "~> 5.1.0"
 gem "jquery-rails"
+gem "mathjax-rails"
 gem "pg"
 gem "puma", "~> 3.7"
 gem "rails", "~> 5.1.1"
+gem "redcarpet"
 gem "sass-rails", "~> 5.0"
 gem "scrollreveal-rails"
 gem "slim-rails"
