@@ -6,4 +6,17 @@
         - @article.errors.full_messages.each do |message|
           li = message
 
-  .actions = f.submit
+  tr
+    th = f.label :title
+    td = f.text_field :title
+
+  tr
+    th = f.label :description
+    td = f.text_field :description
+
+  tr
+    th = f.label :text
+    td = f.text_area :text
+
+  tr
+    td = f.submit
