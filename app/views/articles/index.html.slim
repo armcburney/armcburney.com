@@ -5,12 +5,13 @@
     .section
       .col-3-4
         - if @featured
-          .title style = "background: url(#{@featured.image.url(:medium)}); background-size: cover"
-            .tint
-              .section
-                h1 = @featured.title
-                hr
-                h3 = @featured.description
+          = link_to @featured do
+            .title style = "background: url(#{@featured.image.url(:medium)}); background-size: cover"
+              .tint
+                .section
+                  h1 = @featured.title
+                  hr
+                  h3 = @featured.description
           .body
             == render_html! @featured.text
         - else
@@ -18,7 +19,7 @@
 
       .col-1-4
         .section
-          h1 Articles
+          h1 All articles
           hr
           - @articles.each do |article|
             = link_to article do
