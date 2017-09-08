@@ -1,22 +1,28 @@
 = stylesheet_pack_tag "highlight/atom-one-light"
 
-.row
-  .section
-    .col-3-4
-      - if @featured
-        .title
-          h1 = @featured.title
-          hr.small
-          h3 = @featured.description
+#blog
+  .row
+    .section
+      .col-3-4
+        - if @featured
+          .title style = "background: url(#{@featured.image.url(:medium)}); background-size: cover"
+            .tint
+              .section
+                h1 = @featured.title
+                hr
+                h3 = @featured.description
+          .body
+            == render_html! @featured.text
+        - else
+          h1 No articles found :'(
 
-        .body
-          == render_html! @featured.text
-      - else
-        h1 No articles found :'(
-
-    .col-1-4
-      - @articles.each do |article|
+      .col-1-4
         .section
-          h1 = article.title
-          hr.small
-          h3 = article.description
+          h1 Articles
+          hr
+          - @articles.each do |article|
+            = link_to article do
+              h3 = article.title
+              small = article.description
+              br
+              small #{time_ago_in_words(article.created_at)} ago

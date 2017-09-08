@@ -1,17 +1,26 @@
 @import ../variables.sass
 
 #blog
+  .section
+    overflow: hidden
+
+  .title
+    color: $white
+    height: 200px
+    width: 100%
+
+  .tint
+    max-height: 100%
+    min-height: 100%
+
   .head
     height: calc(100vh - #{$nav-height})
     min-height: 400px
 
-    .tint
-      max-height: 100%
-      min-height: 100%
-
     .text
       bottom: 0px
       color: $white
+      padding: 1em
       position: absolute
 
       .section
@@ -24,5 +33,5 @@
   #blog
     .head
       .text
-        top: 250px
+        top: 220px
         bottom: initial
