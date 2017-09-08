@@ -1,8 +1,17 @@
 = stylesheet_pack_tag "highlight/atom-one-light"
 
-.row
-  .section
-    == render_html! @article.text
+#blog
+  .head style = "background: url(#{@article.image.url(:large)})"
+    .tint
+      .text
+        .section
+          h1 = @article.title
+          hr
+          h3 = @article.description
 
-    - if logged_in?
-      = link_to "Edit", edit_article_path(@article)
+  .row
+    .section
+      == render_html! @article.text
+
+      - if logged_in?
+        = link_to "Edit", edit_article_path(@article)
