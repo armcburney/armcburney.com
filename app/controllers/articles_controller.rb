@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
 
   # GET /blog
   def index
-    @articles = Article.all.order(created_at: :desc).drop(1)
+    @articles = Article.all.order(created_at: :desc)
     @featured = Article.last
   end
 
