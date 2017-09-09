@@ -19,8 +19,9 @@
 
     p
       | Converted background job processes from resque to sidekiq in internal
-        deployment tool, reducing memory consumption by XX% and average
-        background job time by XX%
+        deployment tool, and <span>implemented a redis-based locking
+        mechanism</span> for restricting the number of deployment jobs to one
+        job per staging/production environment
       br
       i
         | (Ruby on Rails, Redis)
@@ -52,5 +53,3 @@
       br
       i
         | (Ruby, Sinatra, PivotalTracker API)
-
-    // p - implemented redis-based locking mechanism for unique sidekiq jobs

@@ -12,6 +12,7 @@
                   h1 = @featured.title
                   hr
                   h3 = @featured.description
+                  small Posted <i>#{time_ago_in_words(@featured.created_at)}</i> ago
           .body
             == render_html! @featured.text
         - else
