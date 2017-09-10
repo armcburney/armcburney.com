@@ -1,14 +1,14 @@
 @import ../../variables.sass
 
-#menu-toggle-label
-  z-index: 2
-.icon-menu
-  z-index: 1
-
 .row.header
   border-bottom: 1px solid rgba(0, 0, 0, 0.25)
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15)
   height: $nav-height
+
+  #menu-toggle-label
+    z-index: 2
+  .icon-menu
+    z-index: 1
 
   img
     float: left
@@ -41,10 +41,12 @@
   .row.header
     border-bottom: none
     box-shadow: none
+
     img
       display: none
+
     .float-left, .float-right
       float: none
 
-  .icon-menu
-    height: $nav-height
+    .icon-menu
+      height: $nav-height

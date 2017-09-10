@@ -1,10 +1,45 @@
 .main
+  .row
+    .section
+      h1.center Curriculum Vitae
+      hr.small
+
+      .col-1-4
+        ul.bordered-list
+          li = link_to "Curriculum Vitae", t("urls.internal.cv"), class: "here"
+          li = link_to "Work Experience", t("urls.cv.work")
+          li = link_to "Projects & Open Source", t("urls.cv.projects")
+          li = link_to "Volunteer Work", t("urls.cv.volunteer")
+
+      .col-3-4.bg-white.padding.no-first-last
+        h2
+          | Andrew Robert McBurney
+          img.avatar src = image_path("other/engsoc_profile.jpg") class = "float-right" width = "20%" alt = "Andrew Robert McBurney"
+        ul
+          li
+            small.gray-light Email
+            br
+            span = t("general.email")
+        ul
+          li
+            small.gray-light Handle
+            br
+            span @armcburney
+        p
+          small.gray-light Description
+          br
+          | #{I18n.t("general.about")}
+
   / Work Experience
-  = render "home/shared/heading", label: "Work Experience"
-  = render "home/cv/doximity"
-  = render "home/cv/vena"
-  = render "home/cv/coupgon"
+  #work      = render "home/shared/heading", label: "Work Experience"
+  #doximity  = render "home/cv/work/doximity"
+  #vena      = render "home/cv/work/vena"
+  #coupgon   = render "home/cv/work/coupgon"
 
   / Projects & Open Source
-  = render "home/shared/heading", label: "Projects & Open Source"
-  = render "home/cv/projects"
+  #projects  = render "home/shared/heading", label: "Projects & Open Source"
+  #emerald   = render "home/cv/projects/emerald"
+
+  / Volunteer Work
+  #volunteer = render "home/shared/heading", label: "Volunteer Work"
+  #engsoc    = render "home/cv/volunteer/engsoc"
