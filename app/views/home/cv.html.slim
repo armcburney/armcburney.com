@@ -19,12 +19,12 @@
           li
             small.gray-light Email
             br
-            span = t("general.email")
+            span = link_to t("general.email"), "mailto:#{t('general.email')}"
         ul
           li
             small.gray-light Handle
             br
-            span @armcburney
+            span = link_to "@armcburney", "https://twitter.com/armcburney/"
         p
           small.gray-light Description
           br
