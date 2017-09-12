@@ -1,7 +1,16 @@
-= render "home/cv/heading", title: "Vena", bg: "bg-vena"
+= render "home/cv/heading", bg: "bg-vena"
 
 .row
   .section
+    div style = "overflow: hidden"
+      .float-left
+        h1 Vena Solutions
+        small Software Developer Intern
+      .float-right
+        h1 Toronto, Ontario
+        small Sept. &mdash; Dec. 2016
+    hr
+
     blockquote
       | Optimized SQL queries in a REST API by solving an n+1 query problem
         instance, fetching lazily loaded object members before object

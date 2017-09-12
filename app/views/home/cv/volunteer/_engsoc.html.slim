@@ -1,7 +1,11 @@
-= render "home/cv/heading", title: "University of Waterloo Engineering Society", bg: "bg-engsoc"
+= render "home/cv/heading", bg: "bg-engsoc"
 
 .row
   .section
+    h1 University of Waterloo Engineering Society
+    small = link_to "engsoc.uwaterloo.ca", "https://www.engsoc.uwaterloo.ca/"
+    hr
+
     blockquote
       | I sit on multiple university committees primarily to act as a liaison
         and advocate on behalf of all undergraduate engineering students at the
@@ -11,3 +15,7 @@
     blockquote
       | I manage directors under my portfolio and help them to plan and organize
         their events with regards to logistics, bookings, and content
+
+    // do post about career fair here (your help with it, how you built the website, etc.)
+      blockquote
+        |

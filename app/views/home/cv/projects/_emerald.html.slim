@@ -1,7 +1,11 @@
-= render "home/cv/heading", title: "Emerald", bg: "bg-emerald"
+= render "home/cv/heading", bg: "bg-emerald"
 
 .row
   .section
+    h1 Emerald Templating Language
+    small = link_to "github.com/emerald-lang", "https://github.com/emerald-lang"
+    hr
+
     blockquote
       | Co-designed and implemented a whitespace-delimited,
         <span>language-agnostic</span>, HTML5 templating engine with support for
