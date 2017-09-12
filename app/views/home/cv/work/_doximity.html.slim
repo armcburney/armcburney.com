@@ -8,48 +8,44 @@
         | Ruby, Rails, Sinatra, PostgreSQL, MySQL, JavaScript (ES5, ES6,
           CoffeeScript, AlgoliaSearch, Redis, Docker, re:dash
 
-    // h3 Misc
-    p
-      | Created a visitor check-in system for external guests visiting HQ
-        employees. Upon checking-in, the system would automatically sends a
-        slack message that the guest is here
-      br
-      i
-        | (JavaScript, Slack API)
-
-    p
+    blockquote
       | Converted background job processes from resque to sidekiq in internal
         deployment tool, and <span>implemented a redis-based locking
         mechanism</span> for restricting the number of deployment jobs to one
         job per staging/production environment
-      br
-      i
-        | (Ruby on Rails, Redis)
+    i
+      | (Ruby on Rails, Redis)
 
-    p
+    blockquote
       | Created an internal web scraper to query GitHub's GraphQL endpoint to
         find potential hires, and stored information about them in a
         PostgreSQL database
-      br
-      i
-        | (Ruby, PostgreSQL, re:dash)
+    i
+      | (Ruby, PostgreSQL, re:dash)
 
-    p
-      | We have a db hooked up to re:dash that has all our gem information
-        across all the apps we have. Could be useful when we want to do things
-        such as:
+    blockquote
+      | Created a visitor check-in system for external guests visiting HQ
+        employees. Upon checking-in, the system would automatically sends a
+        slack message that the guest is here
+    i
+      | (JavaScript, Slack API)
 
-        1) Query the most popular gems.
-        2) Find which apps are using a specific version of a gem i.e. when
-           there is a security vulnerability
-      br
+    //
+      blockquote
+        | We have a db hooked up to re:dash that has all our gem information
+          across all the apps we have. Could be useful when we want to do things
+          such as:
+
+          1) Query the most popular gems.
+          2) Find which apps are using a specific version of a gem i.e. when
+            there is a security vulnerability
       i
         | (Ruby, PostgreSQL, re:dash, GitHub API)
 
     // h3 Pivotal Tracker PM Helper
-    p
-      | Created filtering / aggregations based on pivotal tracker story state,
-        owner, date since accepted, etc.
-      br
+    //
+      blockquote
+        | Created filtering / aggregations based on pivotal tracker story state,
+          owner, date since accepted, etc.
       i
         | (Ruby, Sinatra, PivotalTracker API)
