@@ -1,0 +1,19 @@
+meta content = ("text/html; charset=UTF-8") http-equiv = "Content-Type"
+
+/ General
+meta name = "author"              content = I18n.t("meta.author")
+meta name = "description"         content = "#{article.description}"
+meta name = "keywords"            content = I18n.t("meta.keywords")
+meta name = "viewport"            content = I18n.t("meta.viewport")
+
+/ Open Graph
+meta property = "og:description"  content = "#{article.description}"
+meta property = "og:title"        content = "#{article.title}"
+meta property = "og:type"         content = "website"
+meta property = "og:url"          content = "https://www.andrewrobertmcburney.com/blog/#{article.slug}"
+meta property = "og:image"        content = "https:#{article.image.url(:medium)}"
+
+/ Twitter
+meta name = "twitter:description" content = "#{article.description}"
+meta name = "twitter:site"        content = "@armcburney"
+meta name = "twitter:title"       content = "#{article.title}"
