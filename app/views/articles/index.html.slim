@@ -21,8 +21,8 @@
       .col-1-4
         .section
           h1 All articles
-          hr
           - @articles.each do |article|
+            hr
             = link_to article do
               h3 = article.title
               small = article.description
