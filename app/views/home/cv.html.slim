@@ -7,8 +7,8 @@
       .col-1-4
         ul.bordered-list
           li = link_to "Curriculum Vitae", t("urls.internal.cv"), class: "here"
-          li = link_to "Work Experience", t("urls.cv.work")
           li = link_to "Projects & Open Source", t("urls.cv.projects")
+          li = link_to "Work Experience", t("urls.cv.work")
           li = link_to "Volunteer Work", t("urls.cv.volunteer")
 
       .col-3-4.bg-white.padding.no-first-last
@@ -30,15 +30,15 @@
           br
           | #{I18n.t("general.about")}
 
+  / Projects & Open Source
+  #projects  = render "home/shared/heading", label: "Projects & Open Source"
+  #emerald   = render "home/cv/projects/emerald"
+
   / Work Experience
   #work      = render "home/shared/heading", label: "Work Experience"
   #doximity  = render "home/cv/work/doximity"
   #vena      = render "home/cv/work/vena"
   #coupgon   = render "home/cv/work/coupgon"
-
-  / Projects & Open Source
-  #projects  = render "home/shared/heading", label: "Projects & Open Source"
-  #emerald   = render "home/cv/projects/emerald"
 
   / Volunteer Work
   #volunteer = render "home/shared/heading", label: "Volunteer Work"
