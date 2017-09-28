@@ -1,49 +1,48 @@
 = image_tag "other/andrew.jpg", class: "avatar home", width: "200px", alt: "Andrew Robert McBurney", title: "Andrew Robert McBurney"
 
-= scroll_reveal animation: "enter top" do
-  #about.row
-    .section
-      h1.center About Me
+#about.row
+  .section
+    h1.center About Me
 
-      .col-1-8.space
-      .col-3-4
-        hr
-        p = I18n.t("general.about")
-        hr
-      .col-1-8.space
+    .col-1-8.space
+    .col-3-4
+      hr
+      p = I18n.t("general.about")
+      hr
+    .col-1-8.space
 
-      .padded.center
-        .col-1-3.black
-          = link_to t("urls.internal.blog") do
-            = image_tag "nav/planet-earth.png", size: 50
-            .gray
-              h3.no-margin-top Blog
-            p
-              small
-                | Occasionally, I write blog posts about topics of interest
-                  to me. These include <i>(but are not limited to)</i> software,
-                  90s alt-rock, A Song of Ice and Fire, and musical gear
-                  (predominantly Guitar)
+    .padded.center
+      .col-1-3.black
+        = link_to t("urls.internal.blog") do
+          = image_tag "nav/planet-earth.png", size: 50
+          .gray
+            h3.no-margin-top Blog
+          p
+            small
+              | Occasionally, I write blog posts about topics of interest
+                to me. These include <i>(but are not limited to)</i> software,
+                90s alt-rock, A Song of Ice and Fire, and musical gear
+                (predominantly Guitar)
 
-        .col-1-3.black
-          = link_to t("urls.internal.cv") do
-            = image_tag "nav/edit.png", size: 50
-            .gray
-              h3.no-margin-top Curriculam Vitae
-            p
-              small
-                | My curriculum vitae (CV), containing a full record of my work
-                  experiences, volunteer work, extracurricular activites, and
-                  open source projects may be found here
+      .col-1-3.black
+        = link_to t("urls.internal.cv") do
+          = image_tag "nav/edit.png", size: 50
+          .gray
+            h3.no-margin-top Curriculam Vitae
+          p
+            small
+              | My curriculum vitae (CV), containing a full record of my work
+                experiences, volunteer work, extracurricular activites, and
+                open source projects may be found here
 
-        .col-1-3.black
-          = link_to asset_path("resume.pdf"), target: "_blank" do
-            = image_tag "nav/file.png", size: 50
-            .gray
-              h3.no-margin-top R&eacute;sum&eacute;
-            p
-              small
-                | My technical r&eacute;sum&eacute;, containing highlights from
-                  my past work experience, technical skills, and open source
-                  projects &amp; initatives I'm most proud of <br><i>(Last
-                  updated on Sept. 1st, 2017)</i>
+      .col-1-3.black
+        = link_to asset_path("resume.pdf"), target: "_blank" do
+          = image_tag "nav/file.png", size: 50
+          .gray
+            h3.no-margin-top R&eacute;sum&eacute;
+          p
+            small
+              | My technical r&eacute;sum&eacute;, containing highlights from
+                my past work experience, technical skills, and open source
+                projects &amp; initatives I'm most proud of <br><i>(Last
+                updated on Sept. 1st, 2017)</i>
