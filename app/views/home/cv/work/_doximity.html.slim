@@ -33,19 +33,12 @@
     i
       | (JavaScript, Slack API)
 
-    // algoliasearch
-
-    //
-      blockquote
-        | We have a db hooked up to re:dash that has all our gem information
-          across all the apps we have. Could be useful when we want to do things
-          such as:
-
-          1) Query the most popular gems.
-          2) Find which apps are using a specific version of a gem i.e. when
-            there is a security vulnerability
-      i
-        | (Ruby, PostgreSQL, re:dash, GitHub API)
+    blockquote
+      | Created a service to query gem metadata from our organization's GitHub
+        repositories, (important for seeing where security related vulnerabilities
+        exist, caused by gem versioning issues)
+    i
+      | (Ruby, PostgreSQL, re:dash, GitHub API)
 
     blockquote
       | Implemented a web interface for project managers to filter and aggregate
