@@ -1,7 +1,33 @@
-.row.hero.bg-main
-  .tint
-    .section.center
-      .text
-        h2 Andrew Robert McBurney
-        hr
-        h3 I've journeyed here and there and back again
+.row.bg-main
+  main
+    .content
+      canvas#scene.scene style=("background: url(#{asset_path 'other/background.png'})")
+
+      script#wrapVertexShader type="x-shader/x-vertex"
+        | attribute float size;
+          attribute vec3 color;
+          varying vec3 vColor;
+          void main() {
+            vColor = color;
+            vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+            gl_PointSize = size * ( 350.0 / - mvPosition.z );
+            gl_Position = projectionMatrix * mvPosition;
+          }
+
+      script#wrapFragmentShader type="x-shader/x-fragment"
+        | varying vec3 vColor;
+          uniform sampler2D texture;
+          void main() {
+            vec4 textureColor = texture2D( texture, gl_PointCoord );
+            if ( textureColor.a < 0.3 ) discard;
+            vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+            gl_FragColor = color;
+          }
+
+      .inner
+        h2 Andrew McBurney
+        h3 Software Engineer
+
+  script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js"
+  script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+  = javascript_pack_tag "canvas/canvas"

@@ -12,3 +12,5 @@
 .DS_Store
 .env
 .DS_Store
+TweenMax.min.js
+three.min.js
