@@ -18,7 +18,7 @@ var camera           = new THREE.PerspectiveCamera(50, width / height, 0.1, 2000
 var galaxy           = new THREE.Group();
 
 // Other Variables
-var amountOfCircles  = 3000;
+var amountOfCircles  = 2000;
 var loader           = new THREE.TextureLoader();
 var dotTexture       = loader.load('https://s3.us-east-2.amazonaws.com/andrewmcburney-blog-images/dotTexture.png');
 var dotsGeometry     = new THREE.Geometry();
