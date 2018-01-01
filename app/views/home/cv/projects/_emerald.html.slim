@@ -1,28 +1,31 @@
-= render "home/cv/heading", bg: "bg-emerald"
+.row
+  .section
+    hr
 
 .row
   .section
-    h1 Emerald Templating Language
-    small = link_to "github.com/emerald-lang", "https://github.com/emerald-lang"
-    hr
+    .col-1-4
+      h1 Emerald Templating Language
+      small = link_to "github.com/emerald-lang", "https://github.com/emerald-lang"
 
-    blockquote
-      | Co-designed and implemented a whitespace-delimited,
-        <span>language-agnostic</span>, HTML5 templating engine with support for
-        <span>variable scoping, interpolation, iteration, and conditional
-        logic</span>
-    i
-      | (C++ &amp; Boost, Ruby)
+    .col-3-4.bg-white.padding.no-first-last
+      blockquote
+        | Co-designed and implemented a whitespace-delimited,
+          <span>language-agnostic</span>, HTML5 templating engine with support for
+          <span>variable scoping, interpolation, iteration, and conditional
+          logic</span>
+      i
+        | (C++ &amp; Boost, Ruby)
 
-    blockquote
-      | Developed an <a href="https://github.com/emerald-lang/emerald-emacs">emacs major-mode package</a>
-        for the templating language which includes a syntax highlighter, based on regular
-        expression grammar rules
-    i
-      | (Emacs, Emacs Lisp)
+      blockquote
+        | Developed an <a href="https://github.com/emerald-lang/emerald-emacs">emacs major-mode package</a>
+          for the templating language which includes a syntax highlighter, based on regular
+          expression grammar rules
+      i
+        | (Emacs, Emacs Lisp)
 
-    blockquote
-      | Implemented a minimum viable product and proof of concept as a
-        <a href="https://rubygems.org/gems/emerald-lang/versions/1.0.0">Ruby gem</a>
-    i
-      | (Ruby, RubyGems)
+      blockquote
+        | Implemented a minimum viable product and proof of concept as a
+          <a href="https://rubygems.org/gems/emerald-lang/versions/1.0.0">Ruby gem</a>
+      i
+        | (Ruby, RubyGems)

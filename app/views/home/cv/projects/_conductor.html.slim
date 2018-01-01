@@ -1,12 +1,15 @@
-= render "home/cv/heading", bg: "bg-conductor"
+.row
+  .section
+    hr
 
 .row
   .section
-    h1 Conductor
-    small = link_to "github.com/AndrewMcBurney/conductor", "https://github.com/AndrewMcBurney/conductor"
-    hr
+    .col-1-4
+      h1 Conductor
+      small = link_to "github.com/AndrewMcBurney/conductor", "https://github.com/AndrewMcBurney/conductor"
 
-    blockquote
-      | A distributed job management system for registering workers, and scheduling jobs to execute on them, allowing for conditional scheduling based on job status and output
-    i
-      | (Ruby on Rails, PostgreSQL)
+    .col-3-4.bg-white.padding.no-first-last
+      blockquote
+        | A distributed job management system for registering workers, and scheduling jobs to execute on them, allowing for conditional scheduling based on job status and output
+      i
+        | (Ruby on Rails, PostgreSQL)
