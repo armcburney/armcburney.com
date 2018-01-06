@@ -6,19 +6,36 @@
 
       .icon-menu
       ul.menu
-        .float-right
-          li = link_to t("urls.internal.contact") do
-            = image_tag "nav/message.png"
-            small Contact
-          li = link_to t("urls.internal.music") do
-            = image_tag "nav/speakers.png"
-            small Music
-          li = link_to t("urls.internal.projects") do
-            = image_tag "nav/monitor.png"
-            small Projects
-          li = link_to t("urls.internal.about") do
-            = image_tag "nav/user.png"
-            small About
+        - if action_name == "cv"
+          .float-right
+            li = link_to t("urls.cv.volunteer") do
+              = image_tag "nav/message.png"
+              small Volunteer
+            li = link_to t("urls.cv.work") do
+              = image_tag "nav/speakers.png"
+              small Work
+            li = link_to t("urls.cv.projects") do
+              = image_tag "nav/monitor.png"
+              small Projects
+        - elsif controller_path == "articles"
+          .float-right
+            li = link_to t("urls.blog.featured") do
+              = image_tag "nav/message.png"
+              small Featured
+        - else
+          .float-right
+            li = link_to t("urls.internal.contact") do
+              = image_tag "nav/message.png"
+              small Contact
+            li = link_to t("urls.internal.music") do
+              = image_tag "nav/speakers.png"
+              small Music
+            li = link_to t("urls.internal.projects") do
+              = image_tag "nav/monitor.png"
+              small Projects
+            li = link_to t("urls.internal.about") do
+              = image_tag "nav/user.png"
+              small About
 
         .float-center
           li = link_to t("urls.internal.home") do

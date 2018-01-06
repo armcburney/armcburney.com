@@ -1,13 +1,19 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :authenticate, except: %i(index show)
+  before_action :authenticate, except: %i(index show featured)
   before_action :set_article,  only:   %i(show edit update destroy)
 
   # GET /blog
   def index
     @articles = Article.all.order(created_at: :desc)
     @featured = Article.last
+  end
+
+  # GET /blog/featured/article
+  def featured
+    @article = Article.last
+    render :show
   end
 
   # GET /blog/:id
