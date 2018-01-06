@@ -1,53 +1,53 @@
 .row
   .section
-    div style = "overflow: hidden"
-      .float-left
-        h1 Doximity
-        small Software Engineering Intern
-      .float-right
-        h1 San Francisco, CA
-        small May &mdash; Aug. 2017
-    hr
+    .col-1-4
+      h1 Doximity
+      h4
+        b Software Engineering Intern
+      small San Francisco, CA
+      br
+      small May &mdash; Aug. 2017
 
-    blockquote
-      | Converted background job processes from resque to sidekiq in internal
-        deployment tool, and <span>implemented a redis-based locking
-        mechanism</span> for restricting the number of deployment jobs to one
-        job per staging/production environment
-    i
-      | (Ruby on Rails, Redis)
+    .col-3-4.bg-white.padding.no-first-last
+      blockquote
+        | Converted background job processes from resque to sidekiq in internal
+          deployment tool, and <span>implemented a redis-based locking
+          mechanism</span> for restricting the number of deployment jobs to one
+          job per staging/production environment
+      i
+        | (Ruby on Rails, Redis)
 
-    blockquote
-      | Implemented a service to lock merges into production GitHub repositories
-        while deploys to production environments were locked through our deployment
-        service, by sending status healthchecks to the GitHub API
-    i
-      | (Ruby on Rails, Redis, GitHub API)
+      blockquote
+        | Implemented a service to lock merges into production GitHub repositories
+          while deploys to production environments were locked through our deployment
+          service, by sending status healthchecks to the GitHub API
+      i
+        | (Ruby on Rails, Redis, GitHub API)
 
-    blockquote
-      | Developed a web scraper to query GitHub's GraphQL API to find potential
-        hires for engineering outsourcing. Please see my blog post for more details:
-        <a href="/blog/graphql-vs-rest">andrewrobertmcburney.com/blog/graphql-vs-rest</a>
-    i
-      | (Ruby, PostgreSQL, re:dash)
+      blockquote
+        | Developed a web scraper to query GitHub's GraphQL API to find potential
+          hires for engineering outsourcing. Please see my blog post for more details:
+          <a href="/blog/graphql-vs-rest">andrewrobertmcburney.com/blog/graphql-vs-rest</a>
+      i
+        | (Ruby, PostgreSQL, re:dash)
 
-    blockquote
-      | Designed a visitor check-in system for external guests visiting HQ
-        employees. Upon checking-in, the system would automatically send a
-        slack message that the guest is here
-    i
-      | (JavaScript, Slack API)
+      blockquote
+        | Designed a visitor check-in system for external guests visiting HQ
+          employees. Upon checking-in, the system would automatically send a
+          slack message that the guest is here
+      i
+        | (JavaScript, Slack API)
 
-    blockquote
-      | Created a service to query gem metadata from our organization's GitHub
-        repositories, (important for seeing where security related vulnerabilities
-        exist, caused by gem versioning issues)
-    i
-      | (Ruby, PostgreSQL, re:dash, GitHub API)
+      blockquote
+        | Created a service to query gem metadata from our organization's GitHub
+          repositories, (important for seeing where security related vulnerabilities
+          exist, caused by gem versioning issues)
+      i
+        | (Ruby, PostgreSQL, re:dash, GitHub API)
 
-    blockquote
-      | Implemented a web interface for project managers to filter and aggregate
-        pivotal tracker scrum stories based on state, owner, date since accepted,
-        etc.
-    i
-      | (Ruby, Sinatra, PivotalTracker API)
+      blockquote
+        | Implemented a web interface for project managers to filter and aggregate
+          pivotal tracker scrum stories based on state, owner, date since accepted,
+          etc.
+      i
+        | (Ruby, Sinatra, PivotalTracker API)
