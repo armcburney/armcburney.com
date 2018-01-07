@@ -9,18 +9,18 @@
         - if action_name == "cv"
           .float-right
             li = link_to t("urls.cv.volunteer") do
-              = image_tag "nav/message.png"
+              = image_tag "nav/volunteer.png"
               small Volunteer
-            li = link_to t("urls.cv.work") do
-              = image_tag "nav/speakers.png"
-              small Work
             li = link_to t("urls.cv.projects") do
               = image_tag "nav/monitor.png"
               small Projects
+            li = link_to t("urls.cv.work") do
+              = image_tag "nav/work.png"
+              small Work
         - elsif controller_path == "articles"
           .float-right
             li = link_to t("urls.blog.featured") do
-              = image_tag "nav/message.png"
+              = image_tag "nav/featured.png"
               small Featured
         - else
           .float-right
