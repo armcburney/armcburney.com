@@ -5,21 +5,21 @@ footer
           h3 Andrew Robert McBurney
           small
             | Fourth year software engineering student, currently studying at the
-              University of Waterloo. I'm passionate about recording music, open
-              source initiatives, social justice, and artificial intelligence
+              University of Waterloo. Passionate about open source initiatives,
+              recording music, and craft beers
 
         .col-1-3.middle
             h3 Navigation
             ul
-              small = link_to "About",    t("urls.internal.about")
-              small = link_to "Projects", t("urls.internal.projects")
-              small = link_to "Music",    t("urls.internal.music")
-              small = link_to "Contact",  t("urls.internal.contact")
+              small = link_to "Home", t("urls.internal.home")
+              small = link_to "Blog", t("urls.internal.blog")
+              small = link_to "Curriculum Vitae", t("urls.internal.cv")
+              small = link_to "Resume", asset_path("resume.pdf"), target: "_blank"
 
             h3 Media
             ul
-              small = link_to "GitHub",     t("urls.links.github")
               small = link_to "Twitter",    t("urls.links.twitter")
+              small = link_to "GitHub",     t("urls.links.github")
               small = link_to "Soundcloud", t("urls.links.soundcloud")
               small = link_to "LinkedIn",   t("urls.links.linkedin")
 
