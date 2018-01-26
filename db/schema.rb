@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170908002953) do
+ActiveRecord::Schema.define(version: 20180126011328) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(version: 20170908002953) do
     t.integer "image_file_size"
     t.datetime "image_updated_at"
     t.index ["slug"], name: "index_articles_on_slug", unique: true
+  end
+
+  create_table "bullets", force: :cascade do |t|
+    t.string "description", null: false
+    t.string "tools"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "record_id"
+    t.index ["record_id"], name: "index_bullets_on_record_id"
   end
 
   create_table "emails", force: :cascade do |t|
@@ -47,6 +56,17 @@ ActiveRecord::Schema.define(version: 20170908002953) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "subtitle", null: false
+    t.string "heading", null: false
+    t.string "date", null: false
+    t.string "image_path", null: false
+    t.string "record_type", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

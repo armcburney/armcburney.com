@@ -1,0 +1,17 @@
+= form_for @record do |f|
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :subtitle
+    = f.text_field :subtitle
+  .field
+    = f.label :heading
+    = f.text_field :heading
+  .field
+    = f.label :date
+    = f.text_field :date
+  .field
+    = f.label :image_path
+    = f.text_field :image_path
+  .actions = f.submit

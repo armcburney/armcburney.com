@@ -1,0 +1,21 @@
+.row
+  .section
+    p
+      strong Title:
+      = @record.title
+    p
+      strong Subtitle:
+      = @record.subtitle
+    p
+      strong Heading:
+      = @record.heading
+    p
+      strong Date:
+      = @record.date
+    p
+      strong Image path:
+      = @record.image_path
+
+    = link_to 'Edit', edit_record_path(@record)
+    '  |
+    = link_to 'Back', records_path

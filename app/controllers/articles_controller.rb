@@ -17,8 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   # GET /blog/:id
-  def show
-  end
+  def show() end
 
   # GET /blog/new
   def new
@@ -37,8 +36,7 @@ class ArticlesController < ApplicationController
   end
 
   # GET /blog/:id/edit
-  def edit
-  end
+  def edit() end
 
   # PATCH/PUT /blog/:id
   def update
