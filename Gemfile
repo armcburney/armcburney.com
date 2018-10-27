@@ -9,7 +9,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "aws-sdk", "~> 2.3"
+gem "aws-sdk", "~> 3"
+gem "aws-sdk-s3", "~> 1.0.0.rc2"
 gem "dotenv-rails", groups: %i(development test)
 gem "friendly_id", "~> 5.1.0"
 gem "jquery-rails"
