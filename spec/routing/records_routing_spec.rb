@@ -34,6 +34,5 @@ RSpec.describe RecordsController, type: :routing do
     it "routes to #destroy" do
       expect(:delete => "/records/1").to route_to("records#destroy", :id => "1")
     end
-
   end
 end

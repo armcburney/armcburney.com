@@ -20,6 +20,8 @@ class HomeController < ApplicationController
   private
 
   def email_params
-    params.require(:email).permit(:name, :email, :message)
+    params
+      .require(:email)
+      .permit(:name, :email, :message)
   end
 end
