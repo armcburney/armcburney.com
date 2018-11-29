@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20180126011328) do
     t.string "slug"
     t.string "image_file_name"
     t.string "image_content_type"
-    t.integer "image_file_size"
+    t.bigint "image_file_size"
     t.datetime "image_updated_at"
     t.index ["slug"], name: "index_articles_on_slug", unique: true
   end
