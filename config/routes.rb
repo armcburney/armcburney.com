@@ -3,7 +3,6 @@
 Rails.application.routes.draw do
   resources :records
   resources :articles, path: "blog"
-  get  "blog/featured/article", to: "articles#featured"
   get  "cv", to: "home#cv"
   post "",   to: "home#mail"
 
