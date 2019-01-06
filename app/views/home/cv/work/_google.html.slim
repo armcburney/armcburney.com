@@ -1,0 +1,80 @@
+.row
+  .section
+    .col-1-4
+      h1
+        | Google
+        img.avatar.border-small src = image_path("companies/google.png") class = "float-left" alt = "Google Logo"
+      h4
+        b Software Engineering Intern
+      small New York, NY
+      br
+      small Sep. 2018 &mdash; Dec. 2018
+
+    .col-3-4.bg-white.padding.no-first-last
+      blockquote
+        | Designed and implemented a library to parse arbitrary Ruby files and
+          convert them into an abstract syntax tree (AST) representation; the
+          library utilizes the Ruby C API to create a Ruby virtual machine which
+          can execute Ruby code to leverage a parsing library written in Ruby
+        hr
+
+        ul
+          li
+            | Investigated strategies to parse arbitrary Ruby files for our
+              team’s use cases which would work best within Google’s stack,
+              keeping in mind security concerns of third-party dependencies
+
+          li
+            | Wrote a number of prototypes to test various approaches before
+              finally settling on a design utilizing Ruby's C API interfacing
+              with Golang
+
+          li
+            | Wrote a write up of the pros and cons of the various
+              alternatives in my design document and made the corresponding
+              design decision that fit best within our team’s technology
+              stack
+
+          li
+            | Wrote well documented and tested C code using the Ruby C API,
+              wrapped in Golang functions to execute Ruby code to parse the
+              Ruby files and return an AST representation
+
+          li
+            | Implemented AST traversal logic to traverse parsed Ruby source
+              files to construct Golang structs representing the fastlane
+              configuration files by pulling out domain-specific language (DSL)
+              information from the Ruby source
+
+          li
+            | Debugged issues with the Ruby C API usage in Golang due to
+              limitations of how the Cgo package handles C signals due to
+              having smaller stack sizes in goroutines. Updated how the Ruby
+              language handles C signals by modifying the Ruby language C
+              source to mitigate these issues
+
+          li
+            | Wrote comprehensive and robust unit test suites to cover a
+              variety of different types of edge-cases in the parser
+      i
+        | (Golang, C, Ruby)
+
+      blockquote
+        | Implemented an unparser for the Ruby language to transform an
+          arbitrary AST representation back into its corresponding equivalent
+          Ruby source code so that modifications could be made to the syntax
+          tree and the Ruby code could be reconstructed
+      i
+        | (Golang, Ruby)
+
+      blockquote
+        | Designed a frontend Angular component to display the fastlane DSL
+          information from the parsed Ruby configuration files
+      i
+        | (Angular, TypeScript, HTML, SASS)
+
+      blockquote
+        | Developed front-end services to fetch, store, update, and select
+          the DSL data from the backend store
+      i
+        | (Angular, TypeScript, RxJS)
