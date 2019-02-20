@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :authenticate, except: %i(index show)
-  before_action :set_article,  only:   %i(show edit update destroy)
+  before_action :authenticate,   except: %i(index show)
+  before_action :set_article,    only:   %i(show edit update destroy)
+  after_action  :enable_iframes, only:   %i(index show)
 
   # GET /blog
   def index

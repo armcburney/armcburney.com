@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
       username == ENV["USER_ID"] && password == ENV["PASSWORD"]
     end
   end
+
+  private
+
+  def enable_iframes
+    response.headers.delete "X-Frame-Options"
+  end
 end
