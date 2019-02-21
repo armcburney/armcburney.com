@@ -8,7 +8,7 @@ import * as THREE from 'three';
 var canvas           = document.querySelector('canvas');
 var width            = canvas.offsetWidth;
 var height           = canvas.offsetHeight;
-var colors           = [new THREE.Color(0xcd5c5c), new THREE.Color(0x96789f), new THREE.Color(0x535353)];
+var colors           = [new THREE.Color(0x0066ff), new THREE.Color(0x96789f), new THREE.Color(0x535353)];
 var renderer         = new THREE.WebGLRenderer({canvas: canvas, antialias: true, alpha: true});
 
 // Scene
