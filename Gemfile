@@ -9,7 +9,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "actionview", ">= 5.1.6.2"
+gem "actionview", "= 5.1.6.1"
 gem "aws-sdk", "~> 3"
 gem "aws-sdk-s3", "~> 1.0.0.rc2"
 gem "dotenv-rails", groups: %i(development test)
@@ -20,8 +20,8 @@ gem "mathjax-rails"
 gem "paperclip"
 gem "pg"
 gem "puma", "~> 3.7"
-gem "rails", "~> 5.1.1"
 gem "rack", ">= 2.0.6"
+gem "rails", ">= 5.1.6.1"
 gem "redcarpet"
 gem "sass-rails", "~> 5.0"
 gem "scrollreveal-rails"
